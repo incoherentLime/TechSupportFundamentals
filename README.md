@@ -26,22 +26,22 @@ Application policy recommendations
 Security and privacy policy recommendations
 Intrusion detection or prevention for systems containing customer data
 
-Authentication system
+** Authentication system **
 Use a multi-factor RADIUS server. This will require all users to provide two forms of authentication (something you know, something you have) for all corporate systems, this should be then extended to a single sign-on (SSO) as soon as possible.
 
-External website security
+** External website security **
 Using HTTPS at a minimum, implementing a web application firewall and scheduling time to update the web server software.
 
-Internal website security
+** Internal website security **
 The intranet is only accessible to devices on the company LAN or WAN, ensuring only those people who need permission to access parts of the LAN (for example customer data) have it.
 
-Remote access solutions
+** Remote access solutions **
 A VPN for people who need access whilst out of the office, as well as administrators' access to perform fixes from anywhere.
 
-Firewall and basic rules recommendations
+** Firewall and basic rules recommendations **
 Implement a solution such as pfsense or similar, to configure firewall rules. It should deny all inbound by default and only allow specific outbound traffic. VLANs can be configured to further segment the network.
 
-Laptop security configuration
+** Laptop security configuration **
 I recommend these features for new laptops:
 biometric scanning. 
 TPMv2
@@ -52,5 +52,5 @@ Full disk encryption.
 Application policy recommendations 
 A policy for least privilege application access with regular reviews of access. Ensuring applications have recent security patches.
 
-Intrusion detection or prevention
+** Intrusion detection or prevention **
 An intrusion detection system (IDS) such as snort, along with regularly reviewing the rules and checking logs.
